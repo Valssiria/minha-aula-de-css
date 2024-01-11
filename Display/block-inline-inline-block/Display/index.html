@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="man.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título Display </title>
+</head>
+<body style="background: #80ffc1;">
+   
+        <h2> Display </h2>
+
+    <ol>
+            <li>Block</li>
+            <li>Inline</li>
+            <li>Inline-Block</li>
+            <br>
+            <li>Grid</li>
+            <li>Flex</li>
+     </ol>
+
+     <br>
+
+     <ol>
+            <b>1.BLOCK</b> :
+            VEM COMO PADRÃO: 
+            (div), (p), (h1), (h2), (h3), (h4), (h5), (h6), 
+            (ul), (li), (article)
+     </ol>
+
+     <ul>
+            <li> - ocupa 100% da largura do elemento pai </li>
+            <li> - sempre ocupa toda sua linha </li>
+            <li> - altura definida de acordo com o conteúdo </li>
+            <li> - podemos definir o width e o heigth </li>
+            <li> - podemos definir o valor das margin </li>
+     </ul>
+
+     <br>
+
+   <div class="sessao" >
+        <div class="block1 "> block 1</div>
+        <div class="block2"> block 2</div>
+        <div class="block3"> block 3</div>
+    
+    </div>
+
+    <hr>
+<!--  sessão do inline -->
+    <ol>
+         <b>2.INLINE</b> :
+         VEM POR PADRÃO: (a), (span), (b), (i)
+    </ol>
+
+<ul>
+        <li> - Elementos em linha </li>
+        <li> - Não permitir alterar o width e heigth </li>
+        <li> - Não podemos definir o valores de margin top e bottom </li>
+        <li> - Ganha comportamento de uma palavra</li>
+    </ul>
+
+   
+       <div class="sessao">
+        <div class="  inline1"> inline 1</div>
+        
+        <div class="  inline2"> inline 2 </div>
+       
+        <div class="  inline3 "> inline 3</div>
+
+    </div>
+
+ <hr>
+<!--  sessão do inline-block -->
+        <ol>
+            <b>3.INLINE-BLOCK</b> :
+            Elemento em linha porem com caracteristicas do display block e do inline
+            <br>
+            Altura e largura pode ser alteradas as margin
+            <br>
+            È uma mistura de inline com block
+        </ol>
+
+
+        <div class="sessao">
+            <div class="  inline-block1" > inline-block 1</div>
+            
+            <div class="  inline-block2"> inline-block 2 </div>
+           
+            <div class="  inline-block3 "> inline-block 3</div>
+    
+        </div>
+<hr>
+
+        <br><br><br>
+    
+<style>
+    /*  COMENÇANDO COM BLOCK */
+
+    .sessao{
+        
+        padding-left: 30px;
+        margin: 10px;
+       
+    }
+
+h2{
+    text-align: center;
+    color: #362267;
+}
+
+ol, li {
+    text-align: center;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+
+.block1, .block2, .block3{
+    background: #ff0000;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    padding: 10px;
+    display: block;
+}
+.block2{
+    background: #00ff08;
+}
+.block3{
+    background: #0000f2;
+}
+
+
+/* parte do inline */
+
+
+
+.inline1, .inline2, .inline3{
+    background: #ff0000;
+    margin: 10px;
+    padding: 5px;
+   display: inline;
+
+
+   
+}
+
+.inline2{
+    background: #00ff08;
+   
+    
+}
+
+.inline3{
+    background: #0000f2;
+    
+}
+
+/* 
+PARTE DO INLINE-BLOCK */
+
+
+.inline-block1, .inline-block2, .inline-block3{
+    background: #ff0000;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 40px; 
+   display: inline-block;
+  padding-top: 10px;
+  text-align: center;
+  
+}
+
+.inline-block2{
+    background: #00ff08;
+   
+    
+}
+
+.inline-block3{
+    background: #0000f2;
+    
+}
+
+
+</style>
+
+
+
+</body>
+</html>

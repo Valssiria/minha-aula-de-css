@@ -1,0 +1,43 @@
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX-SIZING NO CSS</title>
+ </head>
+ <body>
+    
+    <div class="box">
+        minha div
+    </div>
+
+ </body>
+
+ <!--
+     BOX-SIZING NO CSS
+     ele vem por padrão como
+     CONTENT-BOX = ele vai sempre somando os valores dos seus elementos
+     BORDER-BOX = ele sempre vai acoplar esses valores dentro do meu elemento
+
+ -->
+ 
+ <style>
+*{
+    box-sizing: border-box;
+    /* usar sempre esse elemento no seu site */
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: #ff1493;
+    padding: 20px;
+    border: 10px solid #00f;
+}
+ </style>
+
+
+ </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- essa parte das configurações do head não visivel do site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> 
+    link dentro do html nosso stylesheet-->
+    <title>CSS no HTML</title>
+</head>
+
+<body>
+    <!-- essa parte é das configurações do corpo
+         do body a parte visivel do no site 
+        -->
+
+        <h2>Minha Primeira Aula do css</h2>
+
+        <p>Folha de estilo de CSS stylesheet, Este código vinculará seu css personalizado à página em html.
+            rel="stylesheet" define a relação entre o arquivo HTML
+            e a folha de estilo stylesheet externa</p>
+
+        <button >Clique em mim, Por Favor</button>
+</body>
+
+<!--  Posso fazer assim ou link o css no head -->
+<style>
+    /* parte das estilização do css dentro do html */
+body{
+    background-image: url(https://www.itl.cat/pngfile/big/206-2066198_new-zealand-4k-free-hd-wallpaper-free-download.jpg);
+    background-repeat: no-repeat;
+   background-color: transparent;
+   background-position: center center;
+   background-clip: border-box;
+   /* background-size: cover; */
+    opacity: 0,3;
+}
+
+/* aprendendo 1 seletor das tags */
+h2{
+    color: #1b3419;
+    /* background: #dbe4dd; */
+    text-align: center;
+    opacity: .7;
+    font-size: 40px;
+}
+
+p{
+    color: #97adec;
+    font-size: 40px;
+    text-align: center;
+}
+
+button{
+    background: #c3e8ef;
+    border-radius: 20px;
+    border: 1px solid #434543;
+
+    color: #50d1bd;
+    text-align: center;
+    font-size:  20px;
+    margin: auto auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height:50px;
+
+    opacity: .6;
+    transition: 3s in-out;
+    cursor: grab;
+}
+
+button:hover{
+    background-color: #1b3419;
+    color: #000;
+    opacity: 4;
+}
+</style>
+
+</html>

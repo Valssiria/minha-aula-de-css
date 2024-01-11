@@ -1,0 +1,105 @@
+<!--
+
+    UNIDADES DE MEDIDAS NO CSS
+
+ -UNIDADES DE MEDIDAS I ABSOLUTAS
+       1 polegadas = 2,54cm
+       px (pixels) 1/100 polegadas = 0,254mm px
+       in (inches/polegadas)
+       cm / mm (centimetro / milimetro)
+
+       -> RELATIVAS
+       % calcula o tamanho relativo ao elemento pai
+        -vw-(view width) 1vw é 1% da largura da janela do navegador
+       - vh (view height) 1vh é 1% da altura da janela do navegador
+
+       -ROOT EMPHEMERAL UNIT : RAIZ UNIDADE TRANSITÓRIA
+
+       - em é uma unidade relativa ao elemento pai
+       - rem é uma unidade relativa ao elemento raiz 
+
+    -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNIDADES DE MEDIDAS CSS</title>
+    </head>
+    <body>
+
+        <h1>Unidades de medidas no css</h1>
+
+
+        <div class="vo">
+                <div class="pai">
+                    unidade pai
+                    <div class="filho"> Unidade filho</div>
+                </div>
+        </div>
+
+
+    </body>
+
+<!-- parte da estilização css-->
+
+    <style>
+
+h1{
+    font-size: 30px;
+    /* font-size: 3in; */
+}
+
+
+/* estilização das divs */
+
+.vo{
+      font-size: 16px;
+}
+
+.pai{
+
+  /* font-size: 16px; */
+
+/* parte do px */
+  /* width: 100px;   largura */
+  /* height: 100px;  /* altura */
+
+/*  parte do vw e vh */
+
+width: 50vw;  /* vw é largura */
+height: 50vh; /* vh é altura */
+   background:#00f; /*cor do fundo */
+   color: white; /* cor do texto */
+   font-size: 32px; /* tamanho da letra */
+   font-size: 2em;
+
+}
+
+.filho{
+
+    /* parte das % */
+    width: 50%; /* largura*/
+    height: 50%;  /* altura */
+    background:#f00;  /* cor do fundo */
+    color: white; /* color do texto */
+
+/* parte do EM */
+font-size: 0.5em;
+ /* 5em é relativo a 16px  pois ele vai se referir ao elemento pai*/
+ font-size: 2rem; /* duas elemento root body ex 16px vai ser 32px */
+ /* 2em é relativo a 64px  pois ele vai se referir ao elemento pai o doblo*/
+
+/* ele vai ter a metade do tamanho do pai dele */
+
+    /*font-size: 50%;
+     filho tem 100% ele vai ter 16px pq ele é relativo ao pai
+    se o filho tiver 200% ele vai ter o doblo do pai 32px
+    caso ele tenha só 50% o filho tem 8px*/
+
+}
+
+    </style>
+
+    </html>

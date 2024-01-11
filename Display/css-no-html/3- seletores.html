@@ -1,0 +1,114 @@
+<!-- Parte do seletores do css -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores no CSS</title>
+</head>
+<body>
+    <h1>Minha Primeira Aula do seletor</h2>
+    <p>Qualquer mecanismo, automatico ou não, que executada determinada seleçã</p>
+    <p> Um seletor CSS é a primeira parte de uma regra CSS. 
+        É um padrão de elementos e outros termos que informam ao navegador quais elementos 
+        HTML devem ser selecionados para que os valores de propriedade CSS dentro da regra sejam aplicados a eles. 
+        O elemento ou elementos que são selecionados pelo seletor são referidos como o assunto do seletor .</p>
+
+    
+        <button>Clique em mim, Por Favor</button>
+        <button>Clique em mim, Vai logo mano!</button>
+
+        <!-- parte do seletores ID e CLASS -->
+
+        <h2 class="class-cep">Identificando elementos HTML</h2>
+
+      <p class="class-cep"> Class(classes) <u>classe seria como um CEP.</u>
+         Ela serve para identificar <strong>Vários elementos</strong>. 
+         Ou seja, vários elementos HTML podem usar a mesma classe, 
+         e conseguimos estilizalos no CSS. 
+      <br>
+        <button class="btn">CLASS</button>
+        <button class="btn">CLASS-2</button>
+      <p class="corVariavel">Texto simples</p>
+      
+      <h2 id="id">ID (identificador único)</h2> 
+
+      <p id="rg">
+      <u>Já o ID seria como seu CPF ou RG. </u>
+      Ele serve para identificar aper <strong>UM elemento</strong>.
+       Ou seja, você só pode usar
+        um ID específico uma vez na sua página HTML</p>
+
+            <button id="botão">ID</button>
+            <button id="botão-segundo">ID-2</button>
+</body>
+
+<style>
+
+    /* sempre importante colocar O (;) OBRIGATORIO
+    CTRL+/K+C/*/
+
+/* (*{}) vai estilizar tudo na minha pagina inteira tudo nela*/
+            *{
+                background: rgb(149, 255, 0);
+            }
+
+/* <!-- esse são os primeiros seletores que vimos pela tag (h1/6), (p),(div)
+(button),(a)--> */
+        h1{
+            color: darkred;
+            background: black;
+        }
+
+        P{
+            color: blue;
+            font-size: 20PX;
+        }
+
+        button{
+            background: green;
+          border-color: rgb(29, 30, 28);
+        }
+
+        /* Os Proximo dois seletores são os mais utilizados 
+        ID e as CLASS */
+
+       /* para estilizar o meu ID eu uso o (#titulo{}) */
+
+       #id{
+                color: rgb(240, 5, 146);
+                font-size: 45px;
+       }
+        #rg{
+            color: rgb(255, 0, 21);
+            font-size: 20px;
+            font-weight:bold ;
+            /* font-weigth é a grossura da fonte 
+            e bold é negrito */
+        }
+        #botão{
+            background: brown;
+        }
+
+        #botão-segundo{
+            background: rgb(20, 220, 30);
+        }
+
+   /* para estilizar a minha CLASS eu uso (.class-cep{}) */
+
+   .class-cep{
+            color:rgb(128, 9, 0) ;
+            font-size: 45px;
+            font-weight:bold ;
+   }
+
+.btn{
+    background: blue;
+}
+
+/* parte do contatenando varios estilios em um seletor
+ex: h1, p, a, input, #id, .clss{ color:red} essa cor vai ser para todos e assim vai
+para diminuir cod*/
+
+</style>
+</html>

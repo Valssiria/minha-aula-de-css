@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY NO CSS</title>
+</head>
+<body>
+
+    <!-- DISPLAY NO CSS -->
+
+<h2>Display</h2>
+<ol>
+      <li> BLOCK </li>
+      <li>INLINE </li>
+      <li>INLINE-BLOCK </li>
+      <br>
+      <li> GRID </li>
+       <li> FLEX </li>
+</ol>
+
+<ol> 
+<b>1.Block </b>= 
+vem como padrão: div/ p/ h1 h2 h3 h4 h5 h6/ ul/ li / article</ol>
+
+<ul>
+<li>-ocupa 100% da largura do elemento pai </li>
+<li>-sempre ocupa toda sua linha</li>
+<li>-altura definida de acordo com o conteúdo</li>
+<li>-Podemos definir o width e o height </li>
+<li>-Podemos definir o valores das margin </li>
+</ul>
+
+
+<div class="block">
+      minha div block 1
+    
+</div>
+
+   <div class="block block2">
+      minha div block 2
+</div>
+
+ <div class="block block3">
+      minha div block 3
+</div>
+<br>
+
+
+<ol>por padrão ele ja vem como block <br> block ocupa toda linha um de baixo do outro <br> consigo atribuí margin e paddind no block
+</ol>
+
+<hr>
+
+<ol>
+<b> 2.Inline</b> = 
+vem por padrão a, span, b, i:
+</ol>
+
+<ul>
+<li> -Elementos em linha</li>
+<li>-Nao permitir alterar o width e height</li>
+<li> -Nao podemos definir o valores de margin top e bottom</li>
+<li> -Ganha comportamento de uma palavra </li>
+</ul>
+
+
+
+ <div class="inline">
+      minha div inline 1
+    
+</div>
+
+   <div class="inline inline2">
+      minha div inline 2
+</div>
+
+ <div class="inline inline3">
+      minha div inline 3
+</div>
+
+<br>
+<br>
+
+
+
+<ol> Inline vai ignora os valores de width, height, margin-top e margin-bottom</ol>
+
+
+<hr>
+
+
+   <ol>
+    <b>3.Inline-block</b>
+= Elemento em linha porem, com características do display block e do inline
+<br>
+-Altura e largura pode ser alteradas as margin
+</ol>
+
+
+
+
+  <div class="inline-block">
+      div inline-block 1
+    
+</div>
+
+   <div class="inline-block inline-block2">
+      div inline-block 2
+</div>
+
+ <div class="inline-block inline-block3">
+      div inline-block 3
+</div>
+ <br>
+<br>
+
+
+
+<ol> E uma mistura do inline e block</ol>
+
+<br><br>
+
+</body>
+
+
+<style>
+
+
+/* começando com block*/
+
+.block{
+      background: #ff000a;
+       width: 50px;
+      height: 50px; 
+      margin: 10px;
+      padding: 10px;
+      display:block;
+}
+
+.block2{
+      background: #00ff08;
+      
+}
+
+.block3{
+      
+      background: #0000f2;
+}
+
+/* fim do block */
+
+/* cont no inline */
+
+.inline{
+      background: #3b00ff;
+      /* width: 50px;
+      height: 50px;  */
+      margin: 10px;
+      padding: 5px;
+      display: inline;
+}
+
+.inline2{
+      background: #ff000a;
+      
+}
+
+.inline3{
+      background: #f800ff;
+      
+}
+
+/* fim do inline */
+
+/* cont inline-block*/
+
+.inline-block{
+      background: #ffdc00;
+      width: 50px;
+      height: 50px; 
+      margin: 10px;
+      padding: 5px;
+      display: inline-block;
+}
+
+.inline-block2{
+      background: #0057ff;
+}
+
+.inline-block3{
+      background:#e42f10;
+}
+</style>
+
+
+
+
+</html>

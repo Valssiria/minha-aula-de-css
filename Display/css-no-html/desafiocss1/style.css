@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+ margin-top: 47px;
+ margin-left: 42px;
+}
+
+.a-nav {
+  color: #385b64;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+  line-height: 21px;
+  letter-spacing: 0.875px;
+}
+
+.a-nav:hover {
+  color: #e2e1eb;
+  opacity: 0.8;
+  font-size: 16px; 
+  font-weight: 500;
+  transition: 2s;
+  border-radius: 15px;
+  box-shadow: inset 100px 0 0 0 #6fbf44;
+  padding: 5px;
+}
+
+.a-nav:nth-child(4) {
+  color: #161a49;
+}
+
+.button-nav {
+  margin-left: 50px;
+  color: #385b64;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0.8;
+  text-decoration: none;
+  background: linear-gradient(
+      to right,
+      rgba(223, 251, 251, 0),
+      rgba(216, 243, 243, 0)
+    ),
+    linear-gradient(
+      to right,
+      rgb(155, 2, 86),
+      rgb(39, 226, 10),
+      rgb(185, 225, 5)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.button-nav:hover {
+  background-size: 0 3px, 100% 3px;
+  opacity: 1;
+  font-size: 30px;
+  
+}
+
+.image-localizar {
+  width: 533px;
+  height: 466px;
+  margin-left: 125px;
+  margin-top: 163px;
+  display: inline-block;
+}
+
+section {
+  display: inline-block;
+  margin-left: 90px;
+  width: 493px;
+}
+
+h1 {
+
+  color: #161a49;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 82px;
+}
+
+p {
+ 
+  color: #4b505a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+  margin-top: 57px;
+  margin-bottom: 50px;
+}
+
+.sec-a {
+  color: #6fbf44;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.sec-a:hover {
+  transition: 5s;
+  color: #161a49;
+  font-size: 20px;
+  background: #6fbf44;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 500;
+  box-shadow: 2px 5px 8px #0b1d01;
+}
